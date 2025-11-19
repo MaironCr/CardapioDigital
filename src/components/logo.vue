@@ -1,7 +1,7 @@
 <template>
   <div class="mb-0 p-0">
     <router-link to="/">
-    <img src="../assets/images/logo-image.png" alt="Cardápio Tech" class="w-full h-auto object-cover" />
+    <img src="../assets/images/Image_Logo.png" alt="Cardápio Tech" class="w-full h-auto object-cover" />
     </router-link>  
   </div>
 </template>
