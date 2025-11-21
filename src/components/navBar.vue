@@ -48,21 +48,29 @@
       <button class="btn btn-ghost btn-circle">
       <router-link to="/notificações">
         <div class="indicator">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.161 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          <svg class="w-[31px] h-[31px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M18.5 12A2.5 2.5 0 0 1 21 9.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2.5a2.5 2.5 0 0 1 0 5V17a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
           </svg>
           <span class="badge badge-xs badge-primary indicator-item"></span>
         </div>
       </router-link>  
       </button>
 
+
       <!-- Carrinho de compras -->
       <router-link to="/carrinho" class="btn btn-ghost btn-circle">
         <div class="indicator">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h14l1.5-7H6.4M7 13l-1.35 6.45A1 1 0 007.6 21h9.8a1 1 0 00.95-.72L21 13H7zm5 8a1 1 0 100-2 1 1 0 000 2zm-6 0a1 1 0 100-2 1 1 0 000 2z" />
+          <svg class="w-[31px] h-[31px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
           </svg>
-          <span v-if="itensCarrinho > 0" class="badge badge-sm badge-primary indicator-item">{{ itensCarrinho }}</span>
+          <span
+            v-if="itensCarrinho > 0"
+            class="badge badge-sm badge-primary indicator-item">
+            {{ itensCarrinho }}
+          </span>
+
+
+
         </div>
       </router-link>
 
@@ -86,7 +94,7 @@
 import { ref } from "vue";
 
 const theme = ref("light");
-const itensCarrinho = ref(2); // teste (depois você pode integrar com store ou backend)
+const itensCarrinho = ref(); // teste (depois você pode integrar com store ou backend)
 
 const props = defineProps({
   estaAberto: { type: Boolean, required: true },
