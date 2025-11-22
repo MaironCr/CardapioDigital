@@ -1,0 +1,1 @@
+import{f as n}from"./index-CPnBQvLQ.js";const r=n({itens:[],adicionar(t){const e=this.itens.find(i=>i.nome===t.nome);e?e.quantidade++:this.itens.push({...t,quantidade:1})},remover(t){this.itens=this.itens.filter(e=>e.nome!==t.nome)},limpar(){this.itens=[]},get total(){return this.itens.reduce((t,e)=>t+e.preco*e.quantidade,0)}});export{r as c};
