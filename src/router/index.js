@@ -33,7 +33,9 @@ const router = createRouter({
   component: () => import('@/views/CarrinhoView.vue'),
   },
   {
-  path: '/notificações'
+  path: '/notificações',
+  name: '/tickets',
+  component: () => import('@/views/Tickets.vue'),
   },
   {
   path: '/fazerlogin'
