@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="navbar bg-base-100 shadow-md px-4 sticky top-0 z-50">
     <!-- Botão do menu lateral -->
@@ -14,9 +12,9 @@
     <!-- Logo -->
     <div class="flex-1">
       <h1 class="text-xl font-semibold tracking-tight">
-       <router-link to='/'>
-       <span class="text-primary">CARDÁPIO</span>
-       </router-link>
+        <router-link to="/">
+          <span class="text-primary">CARDÁPIO</span>
+        </router-link>
         <span class="text-sm text-base-content/70"> | Cardápio digital</span>
       </h1>
     </div>
@@ -33,6 +31,7 @@
 
     <!-- Ações à direita -->
     <div class="flex-none gap-2">
+
       <!-- Tema -->
       <button class="btn btn-ghost btn-circle" @click="toggleTheme">
         <svg v-if="theme === 'light'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -44,33 +43,25 @@
       </button>
 
       <!-- Notificações -->
-      
-      <button class="btn btn-ghost btn-circle">
-      <router-link to="/notificações">
+      <router-link to="/notificações" class="btn btn-ghost btn-circle">
         <div class="indicator">
           <svg class="w-[31px] h-[31px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M18.5 12A2.5 2.5 0 0 1 21 9.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2.5a2.5 2.5 0 0 1 0 5V17a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M18.5 12A2.5 2.5 0 0 1 21 9.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2.5a2.5 2.5 0 0 1 0 5V17a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
           </svg>
           <span class="badge badge-xs badge-primary indicator-item"></span>
         </div>
-      </router-link>  
-      </button>
+      </router-link>
 
-
-      <!-- Carrinho de compras -->
+      <!-- Carrinho -->
       <router-link to="/carrinho" class="btn btn-ghost btn-circle">
         <div class="indicator">
-          <svg class="w-[31px] h-[31px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+          <svg class="w-[31px] h-[31px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
           </svg>
-          <span
-            v-if="itensCarrinho > 0"
-            class="badge badge-sm badge-primary indicator-item">
+
+          <span v-if="itensCarrinho > 0" class="badge badge-sm badge-primary indicator-item">
             {{ itensCarrinho }}
           </span>
-
-
-
         </div>
       </router-link>
 
@@ -81,9 +72,8 @@
             <img src="https://icon-library.com/images/no-profile-pic-icon/no-profile-pic-icon-7.jpg" alt="User avatar" />
           </div>
         </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li></li>
-          <li><router-link to='/fazerlogin'><a class='login-link'>Fazer Login</a></router-link></li>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <li><router-link to="/fazerlogin">Fazer Login</router-link></li>
         </ul>
       </div>
     </div>
@@ -94,11 +84,12 @@
 import { ref } from "vue";
 
 const theme = ref("light");
-const itensCarrinho = ref(); // teste (depois você pode integrar com store ou backend)
+const itensCarrinho = ref(0);
 
 const props = defineProps({
   estaAberto: { type: Boolean, required: true },
 });
+
 const emit = defineEmits(["update:estaAberto"]);
 
 function toggleSidebar() {
@@ -110,3 +101,5 @@ function toggleTheme() {
   document.documentElement.setAttribute("data-theme", theme.value);
 }
 </script>
+
+<style scoped></style>

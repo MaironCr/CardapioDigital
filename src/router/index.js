@@ -26,7 +26,6 @@ const router = createRouter({
       path:'/milkshakes',
       component: () =>import('@/views/MilkShake.vue')
     },
-    
     {
       path: '/carrinho',
       name: 'Carrinho',
@@ -39,6 +38,7 @@ const router = createRouter({
     {
     path: '/fazerlogin'
 },
+
 ]})
 
 export default router
