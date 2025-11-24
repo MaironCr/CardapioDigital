@@ -135,70 +135,70 @@ const cardapio = [
 
 
   ///MilkShake
-  {
+   {
     nome: "Milkshake Chocolate",
     descricao: "Cremoso com chantilly, raspas de chocolate, calda e canudo de baunilha",
     preco: 10.80,
-    imagem: "src/assets/images/milkshakechocolate.png",
+    imagem: "public/images/milkshakechocolate.png",
     novo: false,
   },
   {
     nome: "Milkshake Morango",
     descricao: "Cremoso com morangos frescos, calda e chantilly",
     preco: 13.00,
-    imagem: "src/assets/images/milkshakemorango.png",
+    imagem: "public/images/milkshakemorango.png",
     novo: false,
   },
   {
     nome: "Milkshake Misto",
     descricao: "Milkshake de Morango e Chocolate",
     preco: 17.80,
-    imagem: "src/assets/images/milkshakemisto.png",
+    imagem: "public/images/milkshakemisto.png",
     novo: false,
   },
 
 
   //BEBIDAS
-  {
+   {
     nome: "Cerveja Heineken",
     descricao: "CERVEJA HEINEKEN 330ML",
     preco: 9.9,
-    imagem: "src/assets/images/cervejaheineken.png",
+    imagem: "public/images/cervejaheineken.png",
     novo: false,
   },
   {
     nome: "Cerveja Corona",
     descricao: "CERVEJA CORONA 350ML",
     preco: 9.9,
-    imagem: "src/assets/images/cervejacorona.png",
+    imagem: "public/images/cervejacorona.png",
     novo: false,
   },
   {
     nome: "Cerveja Eisenbahn",
     descricao: "CERVEJA EISENBAHN 600ML",
     preco: 9.9,
-    imagem: "src/assets/images/cervejaeisebahn.png",
+    imagem: "public/images/cervejaeisebahn.png",
     novo: false,
   },
   {
     nome: "Cerveja Budweiser",
     descricao: "CERVEJA BUDWEISER 330ML",
     preco: 9.9,
-    imagem: "src/assets/images/cervejabudweiser.png",
+    imagem: "public/images/cervejabudweiser.png",
     novo: false,
   },
   {
     nome: "Refrigerante Lata",
     descricao: "COCA-COLA / GUARANÁ / PEPSI (350ml).",
     preco: 6.0,
-    imagem: "src/assets/images/latinhas.png",
+    imagem: "public/images/latinhas.png",
     novo: false,
   },
   {
     nome: "Suco Natural de Laranja",
     descricao: "SUCO NATURAL FEITO NA HORA",
     preco: 8.5,
-    imagem: "src/assets/images/sucolaranja.png",
+    imagem: "public/images/sucolaranja.png",
     novo: false,
   },
   
@@ -206,14 +206,14 @@ const cardapio = [
     nome: "Água Mineral",
     descricao: "ÁGUA MINERAL VIENA 500ML",
     preco: 4.0,
-    imagem: "src/assets/images/aguaviena.png",
+    imagem: "public/images/aguaviena.png",
     novo: false,
   },
   {
     nome: "Refrigerante 1L",
     descricao: "COCA-COLA / GUARANÁ ANTARTICA",
     preco: 8.0,
-    imagem: "src/assets/images/refrigerantes1litro.png",
+    imagem: "public/images/refrigerantes1litro.png",
     novo: false,
   },
 
