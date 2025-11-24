@@ -7,9 +7,14 @@
     </div>
 
 
-    <div class="flex flex-col flex-1 overflow-hidden">      
-      <nav-bar v-model:estaAberto="sidebarAberto" />
+    <!-- Conteúdo Principal -->
+    <div class="flex flex-col flex-1 overflow-hidden">
+      <!-- Navbar Superior -->
+      <navBar v-model:estaAberto="sidebarAberto" />
+
+      <!-- Área de Conteúdo (Rotas) -->
       <main class="flex-1 overflow-y-auto p-6">
+        <RouterView />
       </main>
     </div>
   </div>
