@@ -33,7 +33,9 @@ const router = createRouter({
     },
     /*Rotas em trabalho não alterar nada*/
     {
-    path: '/notificações'
+    path: '/notificações',
+    name: '/tickets',
+    component: () => import ('@/views/Tickets.vue')
     },
     {
     path: '/fazerlogin'
