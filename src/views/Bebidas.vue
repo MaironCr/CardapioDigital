@@ -13,7 +13,7 @@
           <img
             :src="item.imagem"
             :alt="item.nome"
-            class="h-56 w-full object-cover"
+            class="h-100 w-full object-cover"
           />
         </figure>
 
@@ -63,39 +63,60 @@ const adicionarAoCarrinho = (item) => {
 const cardapio = [
   // 🥤 BEBIDAS
   {
+    nome: "Cerveja Heineken",
+    descricao: "CERVEJA HEINEKEN 330ML",
+    preco: 9.9,
+    imagem: "src/assets/images/cervejaheineken.png",
+    novo: false,
+  },
+  {
+    nome: "Cerveja Corona",
+    descricao: "CERVEJA CORONA 350ML",
+    preco: 9.9,
+    imagem: "src/assets/images/cervejacorona.png",
+    novo: false,
+  },
+  {
+    nome: "Cerveja Eisenbahn",
+    descricao: "CERVEJA EISENBAHN 600ML",
+    preco: 9.9,
+    imagem: "src/assets/images/cervejaeisebahn.png",
+    novo: false,
+  },
+  {
+    nome: "Cerveja Budweiser",
+    descricao: "CERVEJA BUDWEISER 330ML",
+    preco: 9.9,
+    imagem: "src/assets/images/cervejabudweiser.png",
+    novo: false,
+  },
+  {
     nome: "Refrigerante Lata",
-    descricao: "Coca-Cola, Guaraná ou Pepsi (350ml).",
+    descricao: "COCA-COLA / GUARANÁ / PEPSI (350ml).",
     preco: 6.0,
-    imagem: "https://st4.depositphotos.com/1063437/29839/i/1600/depositphotos_298390728-stock-photo-a-glass-and-a-can.jpg",
+    imagem: "src/assets/images/latinhas.png",
     novo: false,
   },
   {
     nome: "Suco Natural de Laranja",
-    descricao: "Suco natural espremido na hora.",
+    descricao: "SUCO NATURAL FEITO NA HORA",
     preco: 8.5,
-    imagem: "https://veja.abril.com.br/wp-content/uploads/2024/02/suco-laranja.jpg?crop=1&resize=1212,909",
+    imagem: "src/assets/images/sucolaranja.png",
     novo: false,
   },
   
   {
-    nome: "Cerveja",
-    descricao: "Cerveja heineken long neck",
-    preco: 9.9,
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfYaLs6pdj_vj49mj9vRdpXcovAy-dGjZIQ&s",
-    novo: false,
-  },
-  {
     nome: "Água Mineral",
-    descricao: "Água natural ou com gás (500ml).",
+    descricao: "ÁGUA MINERAL VIENA 500ML",
     preco: 4.0,
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt_rz4Gos6x74EONCPk8cQXZXYZAsz8yhpHA&s",
+    imagem: "src/assets/images/aguaviena.png",
     novo: false,
   },
   {
-    nome: "Refrigerante 600ml",
-    descricao: "Coca-Cola ou Guaraná Antarctica.",
+    nome: "Refrigerante 1L",
+    descricao: "COCA-COLA / GUARANÁ ANTARTICA",
     preco: 8.0,
-    imagem: "https://alloydeliveryimages.s3.sa-east-1.amazonaws.com/item_images/623affe9779bf.webp",
+    imagem: "src/assets/images/refrigerantes1litro.png",
     novo: false,
   },
 

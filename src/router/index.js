@@ -27,17 +27,18 @@ const router = createRouter({
       component: () =>import('@/views/MilkShake.vue')
     },
     
-  {
-  path: '/carrinho',
-  name: 'Carrinho',
-  component: () => import('@/views/CarrinhoView.vue'),
-  },
-  {
-  path: '/notificações'
-  },
-  {
-  path: '/fazerlogin'
-  },
+    {
+      path: '/carrinho',
+      name: 'Carrinho',
+      component: () => import('@/views/CarrinhoView.vue'),
+    },
+    /*Rotas em trabalho não alterar nada*/
+    {
+    path: '/notificações'
+    },
+    {
+    path: '/fazerlogin'
+},
 ]})
 
 export default router

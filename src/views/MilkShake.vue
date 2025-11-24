@@ -13,7 +13,7 @@
           <img
             :src="item.imagem"
             :alt="item.nome"
-            class="h-56 w-full object-cover"
+            class="h-100 w-full object-cover"
           />
         </figure>
 
@@ -64,9 +64,23 @@ const cardapio = [
   ///MilkShake
   {
     nome: "Milkshake Chocolate",
-    descricao: "Cremoso, com cobertura e chantilly.",
-    preco: 12.9,
-    imagem: "https://receitas.wap.ind.br/wp-content/uploads/2025/03/milkshake-de-chocolate.jpg",
+    descricao: "Cremoso com chantilly, raspas de chocolate, calda e canudo de baunilha",
+    preco: 10.80,
+    imagem: "src/assets/images/milkshakechocolate.png",
+    novo: false,
+  },
+  {
+    nome: "Milkshake Morango",
+    descricao: "Cremoso com morangos frescos, calda e chantilly",
+    preco: 13.00,
+    imagem: "src/assets/images/milkshakemorango.png",
+    novo: false,
+  },
+  {
+    nome: "Milkshake Misto",
+    descricao: "Milkshake de Morango e Chocolate",
+    preco: 17.80,
+    imagem: "src/assets/images/milkshakemisto.png",
     novo: false,
   },
 ]

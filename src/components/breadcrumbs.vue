@@ -5,11 +5,6 @@
         <router-link to="/inicio"> Início </router-link>
       </li>
       <li>
-        <router-link to="/tutors">
-          <slot name="model"></slot>
-        </router-link>
-      </li>
-      <li>
         <span class="inline-flex items-center gap-2 font-semibold">
           <slot name="action"></slot>
         </span>
