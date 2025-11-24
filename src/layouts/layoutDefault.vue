@@ -4,18 +4,17 @@
     <!-- Sidebar (Menu Lateral) -->
     <div class="w-64" v-show="sidebarAberto">
       <logo />
-      <menu-lateral />
+      <menuLateral />
     </div>
 
     <!-- Conteúdo Principal -->
     <div class="flex flex-col flex-1 overflow-hidden">
       <!-- Navbar Superior -->
-      <nav-bar v-model:estaAberto="sidebarAberto" />
+      <navBar v-model:estaAberto="sidebarAberto" />
 
       <!-- Área de Conteúdo (Rotas) -->
       <main class="flex-1 overflow-y-auto p-6">
-        <router-view></router-view>
-        <!-- Em React/Vue, você colocaria <Outlet /> ou <router-view> aqui -->
+        <RouterView />
       </main>
     </div>
   </div>
@@ -26,11 +25,9 @@ import { RouterView } from "vue-router";
 import menuLateral from "@/components/menuLateral.vue";
 import logo from "@/components/logo.vue";
 import navBar from "@/components/navBar.vue";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 
-const sidebarAberto = ref(true);
-
-onMounted(() => {});
+const sidebarAberto = ref(false); // COMEÇA FECHADO
 </script>
 
 <style lang="scss" scoped></style>
