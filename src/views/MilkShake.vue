@@ -2,10 +2,20 @@
   <div class="p-6">
     <h1 class="text-3xl font-bold mb-6 text-center"></h1>
 
+        <!-- SELECIONAR CATEGORIAS-->
+     <div class="flex justify-center mb-6">
+  <select v-model="categoriaSelecionada" class="select select-primary w-full max-w-xs">
+    <option value="todas">Todas as Categorias</option>
+    <option v-for="(cat, i) in categorias" :key="i" :value="cat">
+      {{ cat }}
+    </option>
+  </select>
+</div>
+
     <!-- Grade de produtos -->
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       <div
-        v-for="(item, index) in cardapio"
+        v-for="(item, index) in cardapioFiltrado"
         :key="index"
         class="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300"
       >

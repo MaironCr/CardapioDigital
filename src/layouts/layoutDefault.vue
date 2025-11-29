@@ -21,6 +21,7 @@
 </template>
 
 <script setup>
+
 import { RouterView } from "vue-router";
 import menuLateral from "@/components/menuLateral.vue";
 import logo from "@/components/logo.vue";
@@ -28,6 +29,7 @@ import navBar from "@/components/navBar.vue";
 import { ref } from "vue";
 
 const sidebarAberto = ref(false); // COMEÇA FECHADO
+
 </script>
 
 <style lang="scss" scoped></style>
